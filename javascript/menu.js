@@ -26,20 +26,20 @@ var menu = `
 
             <ul class="navbar-nav flex-grow-1 ms-5">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Categoria</a>
-                </li>
+                    <a href="#" class="nav-link">Favoritos</a>
+                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Moda</a>
+                <a href="cadastro.html" class="nav-link">Compras</a>
                 </li>
+                
+                <li class="nav-item">
+                <a href="#" class="nav-link">Blog</a>
+                 </li>
 
                 <li class="nav-item">
-                <a href="#" class="nav-link">Promoções</a>
-               </li>
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Blog</a>
-                </li>
+                    <a href="#" class="nav-link">Sobre</a>
+                 </li>
 
             </ul>
             <!-- Alinha à direita de forma flutuante "align-self-end" -->
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 var rodape = `
 <footer class="bg-light text-lg-start">
-        <div class="container p-4">
+        <div class="container-fluid p-4">
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <h5>Sobre Nós</h5>
