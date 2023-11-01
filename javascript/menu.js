@@ -26,7 +26,7 @@ var menu = `
 
             <ul class="navbar-nav flex-grow-1 ms-5">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">categoria.html</a>
+                    <a href="categoria.html" class="nav-link">categoria</a>
                  </li>
 
                 <li class="nav-item">
