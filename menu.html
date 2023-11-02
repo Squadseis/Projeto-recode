@@ -31,20 +31,39 @@
                         aria-label="Close"></button>
                 </div>
 
-                <div class="offcanvas-body">
+                <di class="offcanvas-body">
 
                     <ul class="navbar-nav flex-grow-1 ms-4">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Categoria</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categorias
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="casa.html">Casa</a></li>
+                                <li><a class="dropdown-item" href="corpo.html">Corpo</a></li>
+                                <li><a class="dropdown-item" href="moda.html">Moda</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Ferramentas</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
                         </li>
+
                         <li class="nav-item">
                             <a href="#" class="nav-link">Promoções</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Sobre</a>
                         </li>
-
                     </ul>
+
                     <!-- Alinha à direita de forma flutuante "align-self-end" -->
                     <div class="align-self-end">
                         <ul class="navbar-nav ms-4">
@@ -64,11 +83,37 @@
                             </li>
                         </ul>
                     </div>
-                </div>
             </div>
+        </div>
         </div>
     </nav>
     <style>
+        @import url("https://font#222227s.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600;700;800;900&display=swap");
+
+        .navbar .nav-link {
+            font-size: 17px;
+            margin-left: 10px;
+            position: relative;
+        }
+
+        .navbar .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            right: 0;
+            margin-inline: auto;
+            width: 0%;
+            height: 2px;
+            background-color: #ffffff;
+            transition: all 0.6s ease;
+            transform-origin: center;
+        }
+
+        .navbar .nav-item:hover .nav-link::before {
+            width: 100%;
+        }
+
         .navbar {
             background-color: #7a260f;
         }
@@ -80,6 +125,34 @@
         .offcanvas .nav-item .nav-link:hover {
             color: rgb(0, 0, 0);
         }
+
+        .dropdown-menu {
+            background-color: #7a260f;
+            border: none;
+        }
+
+        .dropdown-menu li a{
+            color: #ffffff;
+        }
+
+        .dropdown-menu li a:hover{
+           color: #000000;
+           background-color: #7a260f;
+        }
+        .dropdown-menu li a:before{
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            right: 0;
+            margin-inline: auto;
+            width: 0%;
+            height: 2px;
+            background-color: #ffffff;
+            transition: all 0.6s ease;
+            transform-origin: center;
+        }
+        
 
         #logo {
             max-width: 100px;
@@ -102,51 +175,6 @@
         .nav-item .nav-link:hover {
             color: #ffffff;
 
-        }
-    </style>
-    <div class="container row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3" id="cards">
-        <div class="" id="categoria" style="width: 9rem;">
-            <img src="imagens/produtos/jarro.png" class="card-img-top">
-        </div>
-        <div class="" id="categoria" style="width: 9rem;">
-            <img src="imagens/produtos/jarro.png" class="card-img-top">
-        </div>
-        <div class="" id="categoria" style="width: 9rem;">
-            <img src="imagens/produtos/jarro.png" class="card-img-top">
-        </div>
-        <div class="" id="categoria" style="width: 9rem;">
-            <img src="imagens/produtos/jarro.png" class="card-img-top">
-        </div>
-        <div class="" id="categoria" style="width: 9rem;">
-            <img src="imagens/produtos/jarro.png" class="card-img-top">
-        </div>
-        <div class="" id="categoria" style="width: 9rem;">
-            <img src="imagens/produtos/jarro.png" class="card-img-top">
-        </div>
-    </div>
-    <style>
-        #cards{
-            margin-left: 8%;
-        
-        }
-        #categoria {
-            margin-left: 30px;
-            padding: 1.1em 1.2em 0.2em;
-            text-align: center;
-            box-shadow: 0 2 0px rgba(0, 0, 0, .2);
-        }
-
-        #categoria img {
-
-            width: 65%;
-            border-radius: 50%;
-            margin: 0 auto;
-            box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-        }
-
-        #categoria .btn {
-            border-radius: 2em;
-            color: #ffffff;
         }
     </style>
 
