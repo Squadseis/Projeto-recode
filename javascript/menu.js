@@ -39,7 +39,7 @@ var menu = `
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Ferramentas</a></li>
+                        <li><a class="dropdown-item" href="ferramenta.html">Ferramentas</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
