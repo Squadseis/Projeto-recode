@@ -50,7 +50,7 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Ferramentas</a></li>
+                                <li><a class="dropdown-item" href="ferramenta.html">Ferramentas</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -89,8 +89,6 @@
         </div>
     </nav>
     <style>
-        @import url("https://font#222227s.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600;700;800;900&display=swap");
-
         .navbar .nav-link {
             font-size: 17px;
             margin-left: 10px;
@@ -141,6 +139,20 @@
             background-color: #7a260f;
         }
 
+        .dropdown-menu li a:before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            right: 0;
+            margin-inline: auto;
+            width: 0%;
+            height: 2px;
+            background-color: #ffffff;
+            transition: all 0.6s ease;
+            transform-origin: center;
+        }
+
         #logo {
             max-width: 100px;
         }
@@ -152,16 +164,6 @@
 
         #icon_pesquisa {
             width: 20px;
-        }
-
-        .form-control {
-            background-color: #7a260f;
-            border: none;
-            border-radius: 0px;
-        }
-
-        .d-flex {
-            border-bottom: solid 2px rgb(160, 160, 160);
         }
 
         .nav-item .nav-link {
@@ -176,9 +178,84 @@
     </style>
 
 
-    <h1>Menu para testes</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="t-produtos row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 g-2">
 
-    <footer class="bg-light text-lg-start">
+            <div class="col categorias">
+                <img class="produto-image card-img-top img-fluid" src="imagens/categorias/categoria-decoração.png">
+                <h6 class="card-title text-center">Decoração</h6>
+            </div>
+
+            <div class="col categorias">
+                <img class="produto-image card-img-top img-fluid" src="imagens/categorias/categoria-cama.png">
+                <h6 class="card-title text-center">Colchões</h6>
+            </div>
+
+            <div class="col categorias">
+                <img class="produto-image card-img-top img-fluid" src="imagens/categorias/categoria-banho-cama.png">
+                <h6 class="card-title text-center text-decoration-none">Cama/Banho</h6>
+            </div>
+
+            <div class="col categorias">
+                <img class="produto-image card-img-top img-fluid" src="imagens/categorias/categoria-eletrodomesticos.png">
+                <h6 class="card-title text-center">Eletrodomésticos</h6>
+            </div>
+
+            <div class="col categorias">
+                <img class="produto-image card-img-top img-fluid" src="imagens/categorias/categoria-cozinha.png">
+                <h6 class="card-title text-center">Cozinha</h6>
+            </div>
+
+            <div class="col categorias">
+                <img class="produto-image card-img-top img-fluid" src="imagens/categorias/categoria-moveis.png">
+                <h6 class="card-title text-center">Moveis</h6>
+            </div>
+        </div>
+    </div>
+    <style>
+        .categorias{
+            max-width: 100px;
+            margin: auto;
+            display: block;
+        }
+        .categorias img{
+            border-radius: 500px;   
+        }
+    </style>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="t-produtos row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 g-2">
+
+            <div class="col categoria">
+                <img class="produto-image card-img-top img-fluid" src="imagens/produtos/kit-colar.jpg">
+            </div>
+
+            <div class="col categoria">
+                <img class="produto-image card-img-top img-fluid" src="imagens/produtos/kit-colar.jpg">
+            </div>
+
+            <div class="col categoria">
+                <img class="produto-image card-img-top img-fluid" src="imagens/produtos/kit-colar.jpg">
+            </div>
+
+            <div class="col categoria">
+                <img class="produto-image card-img-top img-fluid" src="imagens/produtos/kit-colar.jpg">
+            </div>
+        </div>
+    </div>
+    <style>
+        .categorias{
+            max-width: 100px;
+            margin: auto;
+            display: block;
+        }
+    </style>
+
+
+        <!--  <footer class="bg-light text-lg-start">
         <div class="container p-4">
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -239,10 +316,11 @@
             }
         </style>
     </footer>
+    -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
 
 </body>
 
