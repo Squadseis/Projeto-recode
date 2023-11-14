@@ -1,3 +1,7 @@
+body{
+  background-color: rgb(210, 210, 210);
+ font-family: 'Times New Roman', Times, serif;
+}
 :root {
   --text-dark: #3f1609;
   --text-light: #7a260f;
