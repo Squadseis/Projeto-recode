@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-
 :root {
   --text-dark: #3f1609;
   --text-light: #7a260f;
@@ -7,6 +5,7 @@
   --primary-lighter: hsl(240, 33%, 86%);
   --primary-gradient: linear-gradient(to right, #3671fd, #3671fd);
 }
+
 *::after,
 *::after {
   margin: 0;
@@ -16,7 +15,6 @@
 
 a,
 button {
-  all: unset;
   cursor: pointer;
 }
 
@@ -45,13 +43,15 @@ img {
   width: 50%;
   position: relative;
   margin-top: 1%;
-  margin-bottom:1%;
-  
+  margin-bottom: 1%;
+
 }
+
 .image-wrapper {
   width: 100%;
   height: 100%;
 }
+
 .image-wrapper img {
   object-fit: cover;
 }
@@ -71,6 +71,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .conte-container h1 {
   font-weight: 600;
   font-size: 1rem;
@@ -91,10 +92,11 @@ img {
     width: 100%;
     margin: 0;
   }
+
   .conte-container {
     width: 100%;
   }
-  
+
 }
 
 .form-section {
@@ -122,15 +124,17 @@ img {
   border-radius: 50px;
 }
 
-.form-wrapper > h2 {
+.form-wrapper>h2 {
   margin-bottom: 0.1rem;
 }
-.form-wrapper > p {
+
+.form-wrapper>p {
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--text-dark);
   margin-bottom: 2rem;
 }
+
 .input-container {
   display: flex;
   flex-direction: column;
@@ -143,11 +147,13 @@ img {
   flex-direction: column;
   gap: 0.2rem;
 }
+
 .form-group label {
   font-size: 0.9375rem;
   font-weight: 600;
   color: #16164d;
 }
+
 .form-group input {
   font-size: 0.875rem;
   font-weight: 500;
@@ -156,6 +162,7 @@ img {
   border: 2px solid var(--primary-lighter);
   border-radius: 0.3rem;
 }
+
 .form-group input:focus {
   border: 2px solid #16164d;
 }
@@ -204,6 +211,7 @@ input[type="checkbox"]::before {
 input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
+
 .remember-me input:checked {
   background: var(--primary-gradient);
 }
@@ -212,9 +220,11 @@ input[type="checkbox"]:checked::before {
   color: var(--text-dark);
   user-select: none;
 }
+
 .remember-forgot a {
   color: var(--primary);
 }
+
 .remember-forgot a:hover {
   text-decoration: underline;
   text-decoration-color: var(--primary);
@@ -238,6 +248,7 @@ input[type="checkbox"]:checked::before {
   color: white;
   background: var(--primary-gradient);
 }
+
 .login-btn:hover {
   opacity: 0.9;
 }
@@ -250,6 +261,7 @@ input[type="checkbox"]:checked::before {
   text-align: center;
   position: relative;
 }
+
 .or-divider::before {
   content: "";
   position: absolute;
@@ -259,6 +271,7 @@ input[type="checkbox"]:checked::before {
   width: 45%;
   background-color: var(--text-light);
 }
+
 .or-divider::after {
   content: "";
   position: absolute;
@@ -272,6 +285,7 @@ input[type="checkbox"]:checked::before {
 .google-signin {
   border: 2px solid var(--primary-lighter);
 }
+
 .google-signin object {
   width: 1.5rem;
   height: 1.5rem;
@@ -292,6 +306,7 @@ input[type="checkbox"]:checked::before {
   .image-section {
     height: 25vh;
   }
+
   .conte-container {
     inset: 0;
     transform: translate(0, 0);
@@ -302,32 +317,39 @@ input[type="checkbox"]:checked::before {
     justify-content: center;
     align-items: center;
   }
+
   .conte-container h1 {
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 1.1rem;
     margin-top: 1.1rem;
   }
+
   .conte-container p {
-    font-size: 1.10rem;    
+    font-size: 1.10rem;
   }
 
   .form-section {
     flex: 1;
     padding: 1rem 6rem;
   }
+
   .logo-container {
     margin-bottom: 1rem;
   }
-  .form-wrapper > h2 {
+
+  .form-wrapper>h2 {
     font-size: 1.25rem;
   }
-  .form-wrapper > p {
+
+  .form-wrapper>p {
     margin-bottom: 1rem;
   }
+
   .form-wrapper button {
     font-size: 0.875rem;
   }
+
   .or-divider {
     font-weight: 500;
     margin-block: 0.6rem;
@@ -338,10 +360,11 @@ input[type="checkbox"]:checked::before {
   .login-container {
     max-width: 100%;
   }
+
   .form-wrapper {
     width: 100%;
   }
-  
+
 }
 
 form .input-field {
@@ -349,6 +372,7 @@ form .input-field {
   height: 45px;
   width: 100%;
 }
+
 .input-field input {
   height: 100%;
   width: 100%;
@@ -371,6 +395,7 @@ form .input-field {
 .button {
   margin: 25px 6px;
 }
+
 .button input {
   color: #fff;
   font-size: 16px;
@@ -379,6 +404,7 @@ form .input-field {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .button input:hover {
   transform: scale(0.9);
 }
