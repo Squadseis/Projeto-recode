@@ -47,7 +47,7 @@ var menu = `
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Promoções</a>
+                    <a href="Promoções.html" class="nav-link">Promoções</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Sobre</a>
